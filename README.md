@@ -3,12 +3,16 @@
 This project is part of the Udacity Data Science Programme. The objection of this project is to create a web app that allows an emergency worker to input a new message and get classification results in several disaster categories, such that the message is directed to the correct agency. 
 
 ## File Descriptions
-`process_data.py`: This code takes as its input csv files containing message data and message categories (labels), and creates an SQLite database containing a merged and cleaned version of this data.
-`train_classifier.py`: This code takes the SQLite database produced by process_data.py as an input and uses the data contained within it to train and tune a ML model for categorizing messages. The output is a pickle file containing the fitted model. Test evaluation metrics are also printed as part of the training process.
-`ETL Pipeline Preparation.ipynb`: The code and analysis contained in this Jupyter notebook was used in the development of process_data.py. process_data.py effectively automates this notebook.
-`ML Pipeline Preparation.ipynb`: The code and analysis contained in this Jupyter notebook was used in the development of train_classifier.py. In particular, it contains the analysis used to tune the ML model and determine which algorithm to use. train_classifier.py effectively automates the model fitting process contained in this notebook.
-`data`: This folder contains sample messages and categories datasets in csv format.
+`data`: This folder contains sample messages and categories datasets in csv format; and code file to preprocess the data.
+    `process_data.py`: Processes the data by loading the two datasets, merging, cleaning and storing it in a SQLite database
+    `ETL Pipeline Preparation.ipynb`: The code and analysis contained in this Jupyter notebook was used in the development of `process_data.py`. 
+
+`models`: This folder contains saved model; and the code file to create said model.
+    `train_classifier.py`: Creates the machine learning pipeline, to classify the data loaded from the SQLite database. 
+    `ML Pipeline Preparation.ipynb`: The code and analysis contained in this Jupyter notebook was used in the development of `train_classifier.py`. 
+
 `app`: This folder contains all of the files necessary to run and render the web app.
+    `run.py`: USed to open the web page
 
 ## Instructions:
 1. Run the following commands in the project's root directory to set up your database and model.
