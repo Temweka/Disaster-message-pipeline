@@ -4,15 +4,15 @@ This project is part of the Udacity Data Science Programme. The objection of thi
 
 ## File Descriptions
 1. `data`: This folder contains sample messages and categories datasets in csv format; and code file to preprocess the data.
-    -`process_data.py`: Processes the data by loading the two datasets, merging, cleaning and storing it in a SQLite database
-    -`ETL Pipeline Preparation.ipynb`: The code and analysis contained in this Jupyter notebook was used in the development of `process_data.py`. 
+    - `process_data.py`: Processes the data by loading the two datasets, merging, cleaning and storing it in a SQLite database
+    - `ETL Pipeline Preparation.ipynb`: The code and analysis contained in this Jupyter notebook was used in the development of `process_data.py`. 
 
 2. `models`: This folder contains saved model; and the code file to create said model.
-    -`train_classifier.py`: Creates the machine learning pipeline, to classify the data loaded from the SQLite database. 
-    -`ML Pipeline Preparation.ipynb`: The code and analysis contained in this Jupyter notebook was used in the development of `train_classifier.py`. 
+    - `train_classifier.py`: Creates the machine learning pipeline, to classify the data loaded from the SQLite database. 
+    - `ML Pipeline Preparation.ipynb`: The code and analysis contained in this Jupyter notebook was used in the development of `train_classifier.py`. 
 
 3. `app`: This folder contains all of the files necessary to run and render the web app.
-    -`run.py`: USed to open the web page
+    - `run.py`: USed to open the web page
 
 ## Instructions:
 1. Run the following commands in the project's root directory to set up your database and model.
